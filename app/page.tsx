@@ -77,10 +77,15 @@ export default function AboutMePage() {
   ];
 
   return (
-    <div className="p-6 space-y-16">
+    <div className="p-6 space-y-16 min-h-screen" 
+         style={{
+           background: "radial-gradient(circle, #1a1a1a 0%, #000000 100%)"
+         }}>
       {/* Main Title */}
       <div className="flex justify-center mb-8">
-        <h1 className={`${title()} text-center text-5xl font-extrabold text-white drop-shadow-2xl`}>
+        <h1
+          className={`${title()} text-center text-5xl font-extrabold text-white drop-shadow-[0_2px_10px_rgba(128,0,128,0.7)]`}
+        >
           Chemistry Units Conclusion
         </h1>
       </div>
@@ -89,7 +94,7 @@ export default function AboutMePage() {
       {sections.map((section, i) => (
         <div
           key={i}
-          className="bg-gray-50 p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-8
+          className="bg-gray-700 p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-8
                      md:even:flex-row-reverse animate-fade-in"
         >
           <img
@@ -100,9 +105,9 @@ export default function AboutMePage() {
           />
 
           <div className="space-y-4 text-center md:text-left">
-            <h2 className="text-3xl font-semibold text-purple-800">{section.title}</h2>
+            <h2 className="text-3xl font-semibold text-purple-400">{section.title}</h2>
             {section.text.map((line, j) => (
-              <p key={j} className="text-gray-700">
+              <p key={j} className="text-gray-200">
                 {line}
               </p>
             ))}
