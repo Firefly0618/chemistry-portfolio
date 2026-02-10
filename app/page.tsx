@@ -9,7 +9,7 @@ export default function AboutMePage() {
   const sections = [
     {
       title: "Properties of Matter",
-      subtitle: "By Haosong Huang",
+      subtitle: "by Haosong Huang",
       img: "IMG_1971.jpeg",
       text: [
         `Properties of Matter: Understand the physical properties of matter. Such as malleability and density, chemical properties such as reactivity and flammability, and how substances behave and interact. It also includes intensive and extensive properties. Where intensive properties are independent of the amount of matter, and extensive properties are dependent on the size of the sample.`,
